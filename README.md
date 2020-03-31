@@ -20,6 +20,6 @@
     <li>The first player to reach 100 points on GLOBAL score wins the game.</li>
 </ul>
 
-<a href="https://suspicious-lamport-90c55a.netlify.com/">
+<a target="_blank" href="https://suspicious-lamport-90c55a.netlify.com/">
     <img width="500px" src="dicegame.png">
 </a>
