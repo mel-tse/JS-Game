@@ -9,13 +9,9 @@ GAME RULES:
 
 */
 
-var scores, roundScore, activePlayer, dice;
+var scores, roundScore, activePlayer, gamePlaying;
 
 init();
-
-dice = Math.floor(Math.random() * 6) +1;
-
-document.querySelector('#current-' + activePlayer).textContent = dice;
 
 //btn-roll
 document.querySelector('.btn-roll').addEventListener('click', function() {
@@ -45,7 +41,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     //2. Update the UI
     document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
     //3. Check if player won the game
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
         document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
         document.querySelector('.dice').style.display = 'none';
         document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
