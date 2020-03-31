@@ -20,4 +20,4 @@
     <li>The first player to reach 100 points on GLOBAL score wins the game.</li>
 </ul>
 
-<img src="dicegame.png">
+<img width="500px" src="dicegame.png">
